@@ -14,14 +14,14 @@ public class Factors {
         int N = number.nextInt();
         System.out.print("The prime factors of number N is ");
 
-        for (int i=3; i<=Math.sqrt(N); i=i+2){
-            while (N%i==0){
-                System.out.print(i+" ");
-                N=N/i;
+        for (int i = 3; i <= Math.sqrt(N); i = i + 2) {
+            while (N % i == 0) {
+                System.out.print(i + " ");
+                N = N / i;
             }
         }
 
-        if (N>2)
+        if (N > 2)
             System.out.print(N);
     }
 }
